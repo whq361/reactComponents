@@ -1,0 +1,28 @@
+.components-timetable-container{
+    width: 100%;
+}
+.components-timetable-main-container{
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+    z-index: 0;
+    touch-action: none;
+}
+.components-timetable-main-container-item{
+    font-size: 17px;
+    color: #565656;
+    width: 60px;
+}
+.components-timetable-container  .components-timetable-main-container-item  label {
+  position: absolute;
+  z-index: 3;
+  touch-action: none;
+}
+.components-timetable-container .components-timetable-main-container-item  label i {font-size:16px;font-style:normal;display:inline-block;width:24px;height:24px;text-align:center;line-height:24px;color:#fff;vertical-align:middle;border:#cbcbcb 1px solid;}
+.components-timetable-container  .components-timetable-main-container-item  label input[type="checkbox"] {display:none;}
+.components-timetable-container .components-timetable-main-container-item   input[type="checkbox"] + i {border-radius:2px;}
+.components-timetable-container .components-timetable-main-container-item  input[type="checkbox"]:checked + i {background:#ffff;color:#6CD5EB;border: #6CD5EB 1px solid;}
+.components-timetable-container  .components-timetable-main-container-item input[type="checkbox"]:disabled + i  {border-color:#6CD5EB;}
+.components-timetable-container  .components-timetable-main-container-item   input[type="checkbox"]:checked:disabled + i{background:#FFF;border-color:#6CD5EB;}

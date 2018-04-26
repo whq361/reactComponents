@@ -1,0 +1,94 @@
+.component-project-filter {
+  height: 100%;
+}
+
+.component-project-filter .filter-header{
+  height: 45px;
+  position: relative;
+  background: #fff;
+  display: flex;
+}
+
+.component-project-filter .filter-header .line1px-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.component-project-filter .filter-header .line1px-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.component-project-filter .filter-header .filter-actions {
+  flex: 1;
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.component-project-filter .filter-header .filter-actions > a {
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.component-project-filter .filter-header .filter-actions > a.opened span {
+  color: #333333;
+  background-image: url(/images/icon_up.png);
+  color: #6AC6F8;
+}
+
+.component-project-filter .filter-header .filter-actions > a span {
+  font-size: 15px;
+  background:url(/images/icon_down.png) no-repeat center right;
+  background-size: 15px;
+  padding-right: 20px;
+}
+
+.component-project-filter .filter-header .filter-actions .line1px-v {
+  align-self: stretch;
+}
+
+.component-project-filter .filter-optioins {
+  background: #fff;
+}
+
+.component-project-filter .filter-optioins li {
+  position: relative;
+  height: 44px;
+  padding-left: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 15px;
+  color: #333333;
+}
+
+.component-project-filter .filter-optioins li .line1px {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.component-project-filter .filter-optioins li.selected {
+  background: #F8F8F8;
+  color: #6AC6F8;
+}
+
+.component-project-filter .filter-optioins li a {
+  flex: 1;
+}
+
+.component-project-filter .filter-mask {
+  height: 100%;
+  opacity: 0.2;
+  background: #333333;
+}
