@@ -1,0 +1,54 @@
+.componentTab {
+ 
+}
+
+.tabHeader {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    background: #fff;
+  
+  }
+  .tabs {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 0 30px;
+    li {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: stretch;
+      font-size: 15px;
+      color: #666666;
+    }
+    .selected {
+        color: red;
+
+    }
+    .selected::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: #6ac6f8;
+      left: 0;
+      bottom: 0;
+      transform: scaleX(0.7);
+      /* transform: translateX(50%);
+        margin-left: -20px; */
+    }
+    li a {
+      display: flex;
+      align-items: center;
+    }
+
+    .tabPanel {
+      display: none;
+    }
+
+    .tabPanelShow {
+      display: block;
+    }
+}
